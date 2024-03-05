@@ -1,4 +1,4 @@
-package Les_go;
+package Practical_Questions;
 
 import java.util.*;
 
