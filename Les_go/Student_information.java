@@ -97,7 +97,7 @@ class Grade extends Course {
     }
 }
 
-public class Main {
+public class Student_information {
     public static void main(String[] args) {
         Student student = new Student();
         Grade student1 = new Grade();
