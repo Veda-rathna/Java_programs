@@ -1,6 +1,6 @@
 public class Largest {
     public static void main(String[] args) {
-        int num1 = 115;
+        int num1 = 114;
         int num2 = 10;
         int num3 = 15;
         if(num1 > num2){
