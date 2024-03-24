@@ -9,8 +9,8 @@ class Counter
 
     {
 
-    count++;
-     System.out.print(count + "\t");
+        count++;
+        System.out.print(count + " ");
     }
 }
 
@@ -43,21 +43,20 @@ class SynDemo
 
         {
 
-            public void run(){
+            public void run() {
 
-            
                 for (int i = 1; i <= 10; i++)
 
                 {
-                    
+
                     c.increment();
 
-                }}
+                }
+            }
         });
 
-        t1.start();    
+        t1.start();
         t2.start();
-        
-        
+
     }
 }
