@@ -6,7 +6,7 @@ class Main extends Thread {
     }
 
     public static void main(String[] args) {
-        Thread_methods t1 = new Thread_methods();
+        Main t1 = new Main();
         t1.start();
     }
 }
