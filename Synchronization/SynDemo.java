@@ -5,12 +5,12 @@ class Counter
 {
     int count;
 
-    public void increment()
+    synchronized void increment()
 
     {
 
-        count++;
-
+    count++;
+     System.out.print(count + "\t");
     }
 }
 
@@ -30,7 +30,7 @@ class SynDemo
             public void run()
 
             {
-                for (int i = 1; i <= 1000; i++)
+                for (int i = 1; i <= 10; i++)
 
                 {
 
@@ -43,26 +43,21 @@ class SynDemo
 
         {
 
-            public void run()
+            public void run(){
 
-            {
-
-                for (int i = 1; i <= 1000; i++)
+            
+                for (int i = 1; i <= 10; i++)
 
                 {
-
+                    
                     c.increment();
 
-                }
-
-            }
+                }}
         });
 
-        t1.start();
-
+        t1.start();    
         t2.start();
-
-        System.out.println("Count: " + c.count);
-
+        
+        
     }
 }
