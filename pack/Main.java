@@ -2,6 +2,7 @@ package pack;
 import java.util.Scanner;
 
 public class Main{
+@SuppressWarnings("resource")
 public void mul(){
 	Scanner sc = new Scanner(System.in);
 	int x,y;

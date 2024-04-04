@@ -3,7 +3,8 @@ package pack;
 import java.util.Scanner;
 
 public class Add{
-	public void Add(){
+	@SuppressWarnings("resource")
+	public void add(){
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the first number");
 		int x = sc.nextInt();
