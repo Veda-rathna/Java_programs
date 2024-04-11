@@ -27,6 +27,7 @@ class Multi {
         
         t1.start();
         
+        System.out.println("The thread is "+t1);
         try {
             t1.join();
         } catch (Exception e) {}
