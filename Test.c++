@@ -1,48 +1,24 @@
-#include <iostream>
+#include<iostream>
+#include<cstring>
+#include<string>
 using namespace std;
-
-const int MAX_SIZE = 100;
-int list[MAX_SIZE];
-int n = 0; // Current number of elements in the list
-
-void Display()
-{
-    cout << "Elements in the list: ";
-    for (int i = 0; i < n; ++i)
-    {
-        cout << list[i] << " ";
+void count(string str1,string str2){
+    int count=0;
+    int len1 = str1.length();
+    int len2 = str2.length();
+    for(int i = 0;i<=len1-len2;i++){
+        if(str1.substr(i,len2) == str2){
+            count++;
+            
+        }
     }
-    cout << endl;
+    cout<<count;
+    
+    
 }
-
-void Insert()
-{
-    int data, pos;
-    cout << "Enter the data to be inserted: ";
-    cin >> data;
-    cout << "Enter the position at which element to be inserted: ";
-    cin >> pos;
-
-    ``` if (pos == n)
-    {
-        cout << "Array overflow" << endl;
-        return;
-    }
-
-    for (int i = n - 1; i >= pos - 1; i--)
-    {
-        list[i + 1] = list[i];
-    }
-
-    list[pos - 1] = data;
-    n++;
-    Display();
-
-    ```
-}
-
-int main()
-{
-    Insert();
+int main(){
+    string a = "HelloworldHello";
+    string b = "Hello";
+    count(a,b);
     return 0;
 }
