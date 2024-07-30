@@ -20,6 +20,7 @@ class Courses extends College {
         System.out.println("Course Fee: " + courseFee);
     }
 
+    @SuppressWarnings({ "unused", "resource" })
     void calculateGPA(int numofsub) {
         float marks = 0.00f;
         int numofarr = 0;
@@ -54,6 +55,7 @@ class Enrollment extends Courses {
 }
 
 class Main extends Enrollment {
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         Main[] obj = new Main[2];
         Scanner sc = new Scanner(System.in);
