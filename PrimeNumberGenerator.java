@@ -1,7 +1,7 @@
 public class PrimeNumberGenerator {
     public static void main(String[] args) {
-        int limit = 20; // Define the limit for generating prime numbers
-        int numThreads = 4; // Define the number of threads
+        int limit = 20; 
+        int numThreads = 4;
 
         for (int i = 0; i < numThreads; i++) {
             int start = 1;
