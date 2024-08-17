@@ -7,18 +7,32 @@ public class Merge_sort {
             int mid = array.length / 2;
             int[] left = new int[mid];
             int[] right = new int[array.length - mid];
-
+    
             System.arraycopy(array, 0, left, 0, mid);
             System.arraycopy(array, mid, right, 0, array.length - mid);
-
+    
             mergeSort(left);
             mergeSort(right);
-
-            for (int i = 0; i < array.length; i++) {
-                array[i] = (i < mid) ? (left[i] < right[i - mid] ? left[i] : right[i - mid]) : right[i - mid];
+    
+            int i = 0, j = 0, k = 0;
+    
+            while (i < left.length && j < right.length) {
+                if (left[i] <= right[j]) {
+                    array[k++] = left[i++];
+                } else {
+                    array[k++] = right[j++];
+                }
+            }
+    
+            while (i < left.length) {
+                array[k++] = left[i++];
+            }
+    
+            while (j < right.length) {
+                array[k++] = right[j++];
             }
         }
-    }
+    }    
 
     public static void main(String[] args) {
         int[] array = {5, 2, 8, 1, 9, 3, 7, 6, 4};
