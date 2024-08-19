@@ -34,6 +34,8 @@ public class Merge_sort {
         }
     }    
 
+    //Testing 
+    
     public static void main(String[] args) {
         int[] array = {5, 2, 8, 1, 9, 3, 7, 6, 4};
         mergeSort(array);
