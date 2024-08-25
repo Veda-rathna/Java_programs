@@ -37,6 +37,8 @@ public class Binary_Search {
                 right = mid - 1;
         }
 
+        
         return -1;
+
     }
 }
