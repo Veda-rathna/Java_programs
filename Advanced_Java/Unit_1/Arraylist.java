@@ -3,6 +3,7 @@ package Advanced_Java.Unit_1;
 import java.util.*;
 
 public class Arraylist {
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
