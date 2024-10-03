@@ -11,7 +11,8 @@ class joined_words {
 
         String[] words = input.split(" ");
 
-        String output = Arrays.stream(words).collect(Collectors.joining("-"));
+        String output = Arrays.stream(words)
+                              .collect(Collectors.joining("-"));
 
         String finaloutput = output.toString();
         System.out.println("The joined words are: " + finaloutput);

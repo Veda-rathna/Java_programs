@@ -17,7 +17,12 @@ class nthsmallest_stream{
         
         int n = sc.nextInt();
         
-        int nthsmallest = Arrays.stream(arr).sorted().distinct().skip(n-1).findFirst().getAsInt();
+        int nthsmallest = Arrays.stream(arr)
+                                .sorted()
+                                .distinct()
+                                .skip(n-1)
+                                .findFirst()
+                                .getAsInt();
         
         System.out.println("The "+n+"th smallest element is "+nthsmallest);
 
