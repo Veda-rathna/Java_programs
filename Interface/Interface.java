@@ -2,6 +2,7 @@ package Interface;
 
     interface Walk{
         void walk();
+        void jog();
     }
     interface Run{
         void run();
@@ -13,6 +14,10 @@ package Interface;
         }
         public void  run(){
             System.out.println("I can run because I have two legs.");
+        }
+
+        public void jog(){
+            System.out.println("I am Jogging");
         }
     }
 
